@@ -23,6 +23,7 @@ export function TaskList() {
       };
   
       setTasks([newTask, ...tasks]);
+      setNewTaskTitle('');
     }
   }
 

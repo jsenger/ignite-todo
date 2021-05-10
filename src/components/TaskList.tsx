@@ -28,10 +28,10 @@ export function TaskList() {
   }
 
   function handleToggleTaskCompletion(id: number) {
-    setTasks(tasks.map(task => {
-      if (task.id === id) task.isComplete = true;
-      return task;
-    }))
+    setTasks(tasks.map(task => task.id === id ? {
+      ...task,
+      isComplete: !task.isComplete
+    } : task));
   }
 
   function handleRemoveTask(id: number) {

@@ -22,7 +22,7 @@ export function TaskList() {
         isComplete: false
       };
   
-      setTasks([newTask, ...tasks]);
+      setTasks([...tasks, newTask]);
       setNewTaskTitle('');
     }
   }

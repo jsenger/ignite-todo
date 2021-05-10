@@ -17,7 +17,7 @@ export function TaskList() {
   function handleCreateNewTask() {
     if (newTaskTitle) {
       const newTask = {
-        id: tasks.length > 0 ? tasks[0].id + 1 : 0,
+        id: Math.random(),
         title: newTaskTitle,
         isComplete: false
       };

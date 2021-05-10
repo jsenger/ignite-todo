@@ -16,7 +16,7 @@ export function TaskList() {
 
   function handleCreateNewTask() {
     if (newTaskTitle) {
-      var newTask = {
+      const newTask = {
         id: tasks.length > 0 ? tasks[0].id + 1 : 0,
         title: newTaskTitle,
         isComplete: false
